@@ -1166,3 +1166,83 @@ html {
         padding: 0.5rem 0.7rem;
     }
 }
+
+
+@media (max-width: 768px) {
+    #floating-whatsapp {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-popup {
+        width: 250px;
+    }
+
+    .popup-header img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .popup-details h4 {
+        font-size: 14px;
+    }
+
+    .popup-details p {
+        font-size: 11px;
+    }
+
+    .popup-input input {
+        font-size: 12px;
+    }
+
+    .popup-input a {
+        font-size: 12px;
+    }
+}
+
+/* For Mobile Devices (480px and smaller) */
+@media (max-width: 480px) {
+    #floating-whatsapp {
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .whatsapp-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .whatsapp-icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .whatsapp-popup {
+        width: 90%;
+        bottom: 70px;
+        right: 5%;
+    }
+
+    .popup-header img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .popup-details h4 {
+        font-size: 12px;
+    }
+
+    .popup-details p {
+        font-size: 10px;
+    }
+
+    .popup-input input {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+
+    .popup-input a {
+        font-size: 10px;
+        padding: 6px 8px;
+    }
+}
