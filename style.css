@@ -162,22 +162,22 @@ section {
 }
 
 .home-text {
-    width: 100%;
+    width: 50%;
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 80vh;
+    margin-top: 4rem;
+   
 }
 
 .home-text h1 {
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: 900;
 }
-.home-text h3 {
-    color: white;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-   
-}
+
 .home-text p {
     color: white;
     font-size: 1.5rem;
@@ -186,7 +186,7 @@ section {
 
 .home-item-button {
     width: 100%;
-    margin: 1.1rem 0rem;
+    /* margin: 1.1rem 0rem; */
 }
 
 .home-item-button button {
@@ -197,86 +197,11 @@ section {
     border: 0;
     font-size: 1.1rem;
     cursor: pointer;
-   border-radius: 10px;
+    border-radius: 10px;
     align-items: center;
 }
 
 /* RESPONSIVE STYLES */
-
-/* Tablet: 768px to 1024px */
-@media (max-width: 1024px) {
-    .home-text {
-        width: 70%;
-        /* Slightly reduce the text container width */
-    }
-
-    .home-text h1 {
-        font-size: 2rem;
-        /* Adjust heading size */
-    }
-
-    .home-text p {
-        font-size: 1.2rem;
-        /* Adjust paragraph size */
-    }
-
-    .home-item-button button {
-        font-size: 1rem;
-        /* Adjust button font size */
-        padding: 0.5rem 0.8rem;
-        /* Adjust button padding */
-    }
-}
-
-/* Mobile: up to 768px */
-@media (max-width: 768px) {
-    .home {
-        height: 100vh;
-        /* Keep full viewport height */
-    }
-
-    .home-text {
-        width: 90%;
-        
-    }
-
-    .home-text h1 {
-        font-size: 1.8rem;
-        
-    }
-
-    .home-text p {
-        font-size: 1rem;
-        /* Adjust paragraph size */
-    }
-
-    .home-item-button button {
-        font-size: 0.9rem;
-        /* Adjust button font size */
-        padding: 0.4rem 0.6rem;
-        /* Adjust button padding */
-    }
-}
-
-/* Extra Small Devices: up to 480px */
-@media (max-width: 480px) {
-    .home-text h1 {
-        font-size: 1.5rem;
-        /* Further reduce heading size */
-    }
-
-    .home-text p {
-        font-size: 0.9rem;
-        /* Further reduce paragraph size */
-    }
-
-    .home-item-button button {
-        font-size: 0.8rem;
-        /* Adjust button font size */
-        padding: 0.3rem 0.5rem;
-        /* Adjust button padding */
-    }
-}
 
 .about-text {
     width: 55%
@@ -417,7 +342,7 @@ section {
     border: 0;
     font-size: 1rem;
     cursor: pointer;
-   border-radius: 10px;
+    border-radius: 10px;
     align-items: center;
 }
 
@@ -480,7 +405,7 @@ section {
 .service-text a {
     color: blue;
     font-size: 1.5rem;
- 
+
 
 }
 
@@ -492,24 +417,26 @@ section {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  body, html {
+}
+
+body,
+html {
     font-family: Arial, sans-serif;
     height: 100%;
-  }
-  
-  /* Contact Section */
-  .contact-section {
+}
+
+/* Contact Section */
+.contact-section {
     position: relative;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  }
-  
-  /* Background Image */
-  .background {
+}
+
+/* Background Image */
+.background {
     position: absolute;
     top: 0;
     left: 0;
@@ -521,11 +448,11 @@ section {
     background-size: cover;
     z-index: -2;
     filter: blur(4px);
-    
-  }
-  
-  /* Translucent Overlay */
-  .overlay {
+
+}
+
+/* Translucent Overlay */
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -534,27 +461,32 @@ section {
     background-color: rgba(0, 0, 0, 0.8);
     z-index: -1;
     opacity: 60;
-  }
-  
-  /* Form Container */
-  .form-container {
-    
+}
+
+/* Form Container */
+.form-container {
+
     padding: 20px 30px;
     border-radius: 10px;
-    width: 90%;
-    max-width: 400px;
+    width: 70%;
     color: white;
     text-align: center;
-    
-  }
-  
-  .form-container h1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin-top: 4rem;
+
+}
+
+.form-container h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
     font-weight: bolder;
-  }
-  
-  .reseller-item-button button {
+}
+
+.reseller-item-button button {
     width: 100%;
     padding: 0.6rem 1rem;
     padding-top: 0.9rem;
@@ -564,8 +496,8 @@ section {
     font-size: 1.3rem;
     cursor: pointer;
     border-radius: 10px;
-  
-  }
+
+}
 
 .contact {
     background: url(img/bg-contact.jpg);
@@ -575,7 +507,7 @@ section {
 
 .black-layer {
     width: 100%;
-   background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.9);
     min-height: 100vh;
     padding: 50px 100px;
     flex-direction: column;
@@ -678,102 +610,276 @@ section {
 
 /* General Footer Styling */
 .footer {
-    background-color: #000; /* Black background */
-    color: #fff; /* White text */
+    background-color: #000;
+    /* Black background */
+    color: #fff;
+    /* White text */
     padding: 2rem 1rem;
     font-family: Arial, sans-serif;
-  }
-  
-  .footer-container {
+}
+
+.footer-container {
     max-width: 1200px;
     margin: 0 auto;
-  }
-  
-  .footer-grid {
+}
+
+.footer-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
-  }
-  
-  .footer-title {
+}
+
+.footer-title {
     font-size: 1rem;
     font-weight: bold;
     margin-bottom: 1rem;
     text-transform: uppercase;
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
     line-height: 1.5;
-  }
-  
-  .footer-list {
+}
+
+.footer-list {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  .footer-list li {
+}
+
+.footer-list li {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 10px;
-  }
-  
-  .footer-list li img {
+}
+
+.footer-list li img {
     width: 20px;
     height: 20px;
-  }
-  
-  .footer-list li a {
+}
+
+.footer-list li a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s ease;
-  }
-  
-  .footer-list li a:hover {
+}
+
+.footer-list li a:hover {
     color: #ddd;
-  }
-  
-  /* Footer Bottom Section */
-  .footer-bottom {
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
     margin-top: 2rem;
     text-align: center;
     border-top: 1px solid #444;
     padding-top: 1rem;
     font-size: 0.9rem;
-  }
-  
-  .footer-bottom a {
+}
+
+.footer-bottom a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .social-links {
+}
+
+.social-links {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
-  }
-  
-  .social-links a img {
+}
+
+.social-links a img {
     width: 32px;
     height: 32px;
     transition: transform 0.3s ease;
-  }
-  
-  .social-links a img:hover {
+}
+
+.social-links a img:hover {
     transform: scale(1.1);
-  }
-  
-  /* Responsive Design */
-  @media screen and (max-width: 768px) {
-    .footer-grid {
-      grid-template-columns: 1fr; /* Stack items on mobile */
-      text-align: center;
+}
+
+/* Floating WhatsApp Button */
+#floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+}
+
+/* WhatsApp Icon */
+.whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #25d366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.1);
+}
+
+/* WhatsApp Popup */
+.whatsapp-popup {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.whatsapp-popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Popup Header */
+.popup-header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #25d366;
+    color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.popup-header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.popup-details h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.popup-details p {
+    font-size: 12px;
+}
+
+/* Popup Message */
+.popup-message {
+    padding: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Popup Input */
+.popup-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.popup-input input {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.popup-input a {
+    background-color: #25d366;
+    color: #fff;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.popup-input a:hover {
+    background-color: #1da851;
+}
+
+
+/* Responsive Design */
+/* Tablet: 768px to 1024px */
+@media (max-width: 1024px) {
+    .home-text {
+        width: 70%;
+        /* Slightly reduce the text container width */
     }
-  }
-  
+
+    .home-text h1 {
+        font-size: 2rem;
+        /* Adjust heading size */
+    }
+
+
+    .home-item-button button {
+        font-size: 1rem;
+        /* Adjust button font size */
+        padding: 0.5rem 0.8rem;
+        /* Adjust button padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .home {
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-item-button button {
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-text {
+        padding: 10px;
+    }
+
+    .home-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-item-button button {
+        font-size: 1rem;
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        /* Stack items on mobile */
+        text-align: center;
+    }
+
+}
+
+
 
 @media (max-width:1280px) {
     header {
@@ -838,11 +944,11 @@ section {
 }
 
 @media (max-width:1180px) {
-   section {
+    section {
         padding: 70px 7%
     }
 
-    .about{
+    .about {
         flex-wrap: wrap;
         gap: 2rem
     }
@@ -923,13 +1029,7 @@ section {
 }
 
 @media (max-width:535px) {
-    .home-video {
-        margin: 10px auto
-    }
 
-    .home-video video {
-        width: 330px
-    }
 
     .about-text {
         width: 100%
@@ -1012,5 +1112,57 @@ section {
 
     .logo-container .bobplayer {
         height: 65px;
+    }
+}
+
+/* Laptops (max-width: 1200px) */
+@media (max-width: 1200px) {
+    .form-container {
+        width: 85%;
+        padding: 15px 25px;
+    }
+
+    .form-container h1 {
+        font-size: 2.2rem;
+    }
+
+    .reseller-item-button button {
+        font-size: 1.2rem;
+        padding: 0.7rem 1rem;
+    }
+}
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .form-container {
+        width: 90%;
+        padding: 15px 20px;
+    }
+
+    .form-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .reseller-item-button button {
+        font-size: 1.1rem;
+        padding: 0.6rem 0.8rem;
+    }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+    .form-container {
+        width: 95%;
+        padding: 10px 15px;
+        margin-top: 2rem;
+    }
+
+    .form-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .reseller-item-button button {
+        font-size: 1rem;
+        padding: 0.5rem 0.7rem;
     }
 }

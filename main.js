@@ -48,3 +48,28 @@ const setLanguage = (e) => {
         (document.querySelector(".arabic").style.display = "ar" == e ? "none" : "block"),
         (document.querySelector(".english").style.display = "ar" == e ? "block" : "none");
 };
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const whatsappIcon = document.querySelector(".whatsapp-icon");
+    const whatsappPopup = document.querySelector(".whatsapp-popup");
+    const sendButton = document.querySelector("#sendButton");
+    const messageInput = document.querySelector("#messageInput");
+
+    // Toggle WhatsApp popup visibility
+    whatsappIcon.addEventListener("click", function () {
+        whatsappPopup.classList.toggle("active");
+    });
+
+    // Send message via WhatsApp
+    sendButton.addEventListener("click", function () {
+        const message = messageInput.value.trim();
+        if (message) {
+            const phoneNumber = "+1234567890"; // Replace with your WhatsApp number
+            const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            sendButton.setAttribute("href", whatsappURL);
+        } else {
+            alert("Please enter a message before sending.");
+        }
+    });
+});
