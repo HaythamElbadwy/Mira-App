@@ -83,14 +83,14 @@ header {
     right: 0;
     z-index: 10000;
     background-color: #fff;
-    padding: 10px 7%;
+    padding: 5px 7%;
     transition: all .5s ease
 }
 
 .logo img {
     margin: 0 1.5px;
     margin-bottom: 12px;
-    width: 90px
+    width: 100px;
 }
 
 .navbar a {
@@ -178,9 +178,9 @@ section {
     font-weight: 900;
 }
 
-.home-text p {
+.home-text h3{
     color: white;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
@@ -275,7 +275,7 @@ section {
     font-size: 1.1rem
 }
 
-#pricing {
+#subscribe {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -829,6 +829,10 @@ html {
         font-size: 2rem;
         /* Adjust heading size */
     }
+    .home-text h3 {
+        font-size: 1.5rem;
+        /* Adjust heading size */
+    }
 
 
     .home-item-button button {
@@ -846,7 +850,10 @@ html {
     }
 
     .home-text h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    .home-text h3{
+        font-size: 1.3rem;
     }
 
     .home-item-button button {
@@ -860,8 +867,11 @@ html {
         padding: 10px;
     }
 
-    .home-text h1 {
+    .home-text h1{
         font-size: 1.5rem;
+    }
+    .home-text h3{
+        font-size: 1rem;
     }
 
     .home-item-button button {
@@ -1168,81 +1178,3 @@ html {
 }
 
 
-@media (max-width: 768px) {
-    #floating-whatsapp {
-        bottom: 15px;
-        right: 15px;
-    }
-
-    .whatsapp-popup {
-        width: 250px;
-    }
-
-    .popup-header img {
-        width: 35px;
-        height: 35px;
-    }
-
-    .popup-details h4 {
-        font-size: 14px;
-    }
-
-    .popup-details p {
-        font-size: 11px;
-    }
-
-    .popup-input input {
-        font-size: 12px;
-    }
-
-    .popup-input a {
-        font-size: 12px;
-    }
-}
-
-/* For Mobile Devices (480px and smaller) */
-@media (max-width: 480px) {
-    #floating-whatsapp {
-        bottom: 10px;
-        right: 10px;
-    }
-
-    .whatsapp-icon {
-        width: 50px;
-        height: 50px;
-    }
-
-    .whatsapp-icon img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .whatsapp-popup {
-        width: 90%;
-        bottom: 70px;
-        right: 5%;
-    }
-
-    .popup-header img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .popup-details h4 {
-        font-size: 12px;
-    }
-
-    .popup-details p {
-        font-size: 10px;
-    }
-
-    .popup-input input {
-        font-size: 10px;
-        padding: 6px 8px;
-    }
-
-    .popup-input a {
-        font-size: 10px;
-        padding: 6px 8px;
-    }
-}
