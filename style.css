@@ -289,7 +289,7 @@ section {
     padding: 1.5rem 0.8rem;
     border-bottom-right-radius: 30px;
     border-top-left-radius: 30px;
-    height: 30rem;
+    height: 33rem;
 }
 
 .pricing-item-title {
@@ -327,7 +327,7 @@ section {
 
 .pricing-item-button {
     width: 100%;
-    margin: 2rem 0rem;
+    margin: 1.5rem 0rem;
 }
 
 .pricing-item-button button {
@@ -873,13 +873,13 @@ a:hover {
   
   .term-conditions {
     text-align: center;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     
   }
   
   .term-conditions h1 {
     font-size: 2rem;
-    /* margin-bottom: 10px; */
+    margin-bottom: 10px;
     color: #F7931E;
   }
   
@@ -890,13 +890,13 @@ a:hover {
   
   .content h2 {
     font-size: 1.5rem;
-    /* margin-top: 20px; */
+    margin-top: 20px;
     color: #F7931E;
   }
   
   .content h3 {
     font-size: 1.2rem;
-    /* margin-top: 15px; */
+    margin-top: 15px;
     color: #F7931E;
   }
   
@@ -910,7 +910,7 @@ a:hover {
   }
   
   .content ul li {
-    /* margin-bottom: 8px; */
+    margin-bottom: 8px;
   }
   
   a {
