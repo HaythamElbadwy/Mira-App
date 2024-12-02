@@ -70,7 +70,7 @@ const translations = {
         technicalsSupport: 'Technical Support',
         sales: 'SALES',
         policiesConditions: 'Policies & Conditions',
-        termsCondations: 'Policies & Conditions',
+        termsCondations: 'Terms & Conditions',
         privacyPolicy: 'Privacy Policy',
         contactInputOne: 'Full Name',
         contactInputTwo: 'Email',
